@@ -3,7 +3,7 @@
 #include "RBNode.h"
 #include <crtdbg.h>
 int main() {
-	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF); //메모리누수 
 	RedBlack rb;
 	RBNode * node = new RBNode;
 	node->SetNum(10);
